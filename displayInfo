@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+class Car {
+public:
+    std::string brandName;
+    std::string model;
+    std::string engine;
+    int numberOfSeats;
+
+    void displayInfo() {
+        std::cout << "Brand: " << brandName << std::endl;
+        std::cout << "Model: " << model << std::endl;
+        std::cout << "Engine: " << engine << std::endl;
+        std::cout << "Number of Seats: " << numberOfSeats << std::endl;
+    }
+};
+
+int main() {
+    Car car1;
+    car1.brandName = "Toyota";
+    car1.model = "Camry";
+    car1.engine = "V6";
+    car1.numberOfSeats = 5;
+    car1.displayInfo();
+
+    return 0;
+}
